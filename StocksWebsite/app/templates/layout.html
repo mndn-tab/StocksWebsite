@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CS50</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stocks.css') }}">
+    {% block style %}{% endblock %}
+
+    <script src="{{ url_for('static', filename='js/layout.js')}}" defer></script>
+    <script src="{{ url_for('static', filename='js/time.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/location.js') }}" defer></script>
+
+</head>
+<body>
+
+    <div id="index">
+        <input type="text" placeholder="symbol" />
+        <ul></ul>
+    </div>
+
+    <div id="clock">clock:</div>
+
+    <div id="location">loading location...</div>
+
+    {% block body %}{% endblock %}
+
+    <br><br>
+    <a href="/">Home</a>
+
+</body>
+</html>
+

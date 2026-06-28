@@ -1,0 +1,19 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+    background: white /*#0f172a;  dark trading-app style */
+    margin: 0;
+    color: black /*white;*/
+}
+/* (id="index"), use # in front of the id, id must be a unique element  */
+#index {
+    font-size: 24px;
+    text-align: right;
+    position: relative; /*the parent element is relative to other elements*/
+}
+#index ul {
+    list-style-type: none; /*remove bullet point*/
+    right: 0; /* Aligns against the right edge , could conflict with left = 50%*/
+    position: absolute; /*child element is absolute, regardless of other elements*/
+    z-index: 10; /* Higher number stacks it on top of other elements */
+
+}

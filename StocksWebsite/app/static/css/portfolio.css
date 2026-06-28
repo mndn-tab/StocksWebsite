@@ -1,0 +1,21 @@
+
+/* List reset */
+ul.portfolio {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+}
+/* Each stock item styled like a card */
+ul.portfolio li {
+    background: white;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border: 1px solid #cbd5e1; /* Subtle, clean outline */
+    border-left: 5px solid #3b82f6; /* Big Blue border on the left */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+}

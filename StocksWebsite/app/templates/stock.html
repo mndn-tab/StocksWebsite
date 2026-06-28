@@ -1,0 +1,28 @@
+﻿{% extends "layout.html" %}
+
+{% block body %}
+
+    <h3>Received Values:</h3>
+    Symbol: {{ symbol }} <br>
+    Start Date: {{ start_date }} <br>
+    End Date: {{ end_date }} <br>
+    <br><br>
+
+    <div style="display: flex; gap: 10px;">
+        <form action="/portfolio" method="post">
+            <input name="symbol" type="hidden" value="{{ symbol }}"/> <!--"hidden" input-->
+            <button type="submit">Add to Portfolio</button>
+        </form>
+        <form action="/portfolio" method="get">
+            <button type="submit">View Portfolio</button>
+        </form>
+    </div>
+    <br><br>
+
+    <ul class="stocks">
+        {% for stock in stocks %}
+        <li>{{ stock.symbol }} - {{ stock.price }} - {{stock.date}} </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

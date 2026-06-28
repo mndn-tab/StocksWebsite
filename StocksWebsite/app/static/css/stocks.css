@@ -1,0 +1,19 @@
+
+
+ul.stocks li {
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+/* Make text inside look structured */
+ul.stocks li span {
+    margin-right: 10px;
+}
+
+/* Optional: need to wrap "price" in a <span> in html */
+ul.stocks li .price { 
+    font-size: 16px;
+    font-weight: 600;
+    color: #22c55e; /* green color */
+}
+

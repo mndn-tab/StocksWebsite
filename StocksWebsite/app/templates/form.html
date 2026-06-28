@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+
+    <h2>Enter Details </h2>
+
+    <form action="/submit" method="post">
+        <label>Symbol:</label>
+        <select name="symbol">
+            {% for symbol in symbols %} 
+            <option value="{{symbol}}"> {{ symbol }} </option> <!-- hacker can not change the value of symbol -->
+            {% endfor %}
+        </select>
+        <br>
+        <br>
+
+        <label>Start Date:</label>
+        <input type="date" name="start_date">
+        <br>
+        <br>
+
+        <label>End Date:</label>
+        <input type="date" name="end_date">
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+        <br>
+        <br>
+
+</body>
+</html>

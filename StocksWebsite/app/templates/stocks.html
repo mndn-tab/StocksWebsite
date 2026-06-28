@@ -1,0 +1,18 @@
+﻿{% extends "layout.html" %}
+
+{% block body %}
+
+<h3>Received Values for {{username}}:</h3>
+
+<ul class="stocks">
+
+    {% for stock in stocks %}
+    <li>
+        {{ stock.symbol }}
+        <span class="price">{{ stock.price }}</span> <!-- <span> is used for styling price in stocks.css -->
+        {{ stock.date }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+﻿{% extends "layout.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<h3>Portfolio Values for {{name}}:</h3>
+<h3>Index = {{index}} </h3>
+
+{% if portfolio_symbols == [] %}
+    Portfolio is empty. Please add stocks to portfolio to show them here.
+{% else %}
+<ul class="portfolio">
+    {% for symbol in portfolio_symbols %}
+    <li>{{ symbol }} </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}
+
+
+
