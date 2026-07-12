@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
 {% endblock %}
 
+{% block script %}
+<script src="{{ url_for('static', filename='js/portfolio.js')}}" defer></script>
+{% endblock %}
+
 {% block body %}
 
 <h3>Portfolio Values for {{name}}:</h3>
@@ -14,7 +18,10 @@
 {% else %}
 <ul class="portfolio">
     {% for symbol in portfolio_symbols %}
-    <li>{{ symbol }} </li>
+    <li>
+        {{ symbol }}
+        <button type="button" class="btn-remove">Remove</button>
+    </li>
     {% endfor %}
 </ul>
 {% endif %}

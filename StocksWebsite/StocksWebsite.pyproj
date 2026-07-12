@@ -49,6 +49,7 @@
     <Content Include="app\static\images\error.png" />
     <Content Include="app\static\js\layout.js" />
     <Content Include="app\static\js\location.js" />
+    <Content Include="app\static\js\portfolio.js" />
     <Content Include="app\static\js\time.js" />
     <Content Include="app\templates\error.html" />
     <Content Include="app\templates\form.html" />

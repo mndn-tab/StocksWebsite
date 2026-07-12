@@ -9,6 +9,7 @@
     <script src="{{ url_for('static', filename='js/layout.js')}}" defer></script>
     <script src="{{ url_for('static', filename='js/time.js') }}" defer></script>
     <script src="{{ url_for('static', filename='js/location.js') }}" defer></script>
+    {% block script %}{% endblock %}
 
 </head>
 <body>
