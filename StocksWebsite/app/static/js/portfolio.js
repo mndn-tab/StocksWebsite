@@ -1,4 +1,4 @@
-if (document.readyState == 'loading') {
+if (document.readyState == 'loading') { // if DOM is still loading, wait till it's loaded to call ready()
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
