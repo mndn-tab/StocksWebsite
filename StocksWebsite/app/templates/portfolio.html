@@ -3,7 +3,6 @@
 {% block style %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
 {% endblock %}
-
 {% block script %}
 <script src="{{ url_for('static', filename='js/portfolio.js')}}" defer></script>
 {% endblock %}
@@ -18,14 +17,20 @@
 {% else %}
 <ul class="portfolio">
     {% for symbol in portfolio_symbols %}
-    <li>
+    <li class="portfolio-item">
         {{ symbol }}
-        <button type="button" class="btn-remove">Remove</button>
+        <input type="number" class="portfolio-quantity-input" value="1" />
+        <button type="button" class="portfolio-remove-btn">Remove</button>
     </li>
     {% endfor %}
 </ul>
 {% endif %}
 
+<div class="portfolio-total">
+    <strong>Total</strong>
+    <span class="portfolio-total-price">0</span>
+    <button class="portfolio-buy-btn" type="button">BUY</button>
+</div>
 {% endblock %}
 
 

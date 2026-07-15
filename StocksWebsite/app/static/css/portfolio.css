@@ -19,3 +19,9 @@ ul.portfolio li {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 
 }
+.portfolio-total {
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+    column-gap: 15px;
+}
