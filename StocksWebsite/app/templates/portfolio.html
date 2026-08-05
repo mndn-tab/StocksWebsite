@@ -18,7 +18,7 @@
 <ul class="portfolio">
     {% for symbol in portfolio_symbols %}
     <li class="portfolio-item">
-        {{ symbol }}
+        <span class="portfolio-symbol-value">{{ symbol }}</span>
         <input type="number" class="portfolio-quantity-input" value="1" />
         <button type="button" class="portfolio-remove-btn">Remove</button>
     </li>
@@ -28,7 +28,7 @@
 
 <div class="portfolio-total">
     <strong>Total</strong>
-    <span class="portfolio-total-price">0</span>
+    <span class="portfolio-total-value">0</span>
     <button class="portfolio-buy-btn" type="button">BUY</button>
 </div>
 {% endblock %}
