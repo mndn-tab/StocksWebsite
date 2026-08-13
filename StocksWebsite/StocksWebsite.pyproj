@@ -43,6 +43,9 @@
     <Compile Include="runserver.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\infra\development\docker\.Dockerfile">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="app\static\css\layout.css" />
     <Content Include="app\static\css\portfolio.css" />
     <Content Include="app\static\css\stocks.css" />
@@ -63,7 +66,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\infra\development\" />
+    <Folder Include="app\infra\development\docker\" />
+    <Folder Include="app\infra\development\k8s\" />
+    <Folder Include="app\infra\production\" />
+    <Folder Include="app\infra\production\docker\" />
+    <Folder Include="app\infra\production\k8s\" />
     <Folder Include="app\models\" />
+    <Folder Include="app\infra\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\js\" />
     <Folder Include="app\static\css\" />

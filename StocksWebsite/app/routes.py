@@ -69,7 +69,9 @@ def register_routes(app, repository):
                 session["portfolio"].append(symbol)
             return redirect("/portfolio")
         #GET
-        return render_template("portfolio.html", portfolio_symbols = session["portfolio"], name = session.get("name"), 
+        return render_template("portfolio.html", 
+                               portfolio_symbols = session["portfolio"], 
+                               name = session.get("name"), 
                                index = Stock.get_index())
     
     @app.route("/symbols")
