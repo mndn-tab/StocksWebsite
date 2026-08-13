@@ -67,8 +67,8 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\infra\development\" />
-    <Folder Include="app\infra\development\docker\" />
     <Folder Include="app\infra\development\k8s\" />
+    <Folder Include="app\infra\development\docker\" />
     <Folder Include="app\infra\production\" />
     <Folder Include="app\infra\production\docker\" />
     <Folder Include="app\infra\production\k8s\" />
